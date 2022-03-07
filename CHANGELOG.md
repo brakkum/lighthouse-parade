@@ -1,5 +1,13 @@
 # lighthouse-parade
 
+## 1.2.0
+
+### Minor Changes
+
+- [#77](https://github.com/cloudfour/lighthouse-parade/pull/77) [`4d21edc`](https://github.com/cloudfour/lighthouse-parade/commit/4d21edccdacb91732d041d43d109da05ed1c1323) Thanks [@calebeby](https://github.com/calebeby)! - Update Dependencies
+
+  The most significant change is that Lighthouse has been updated from `^6.4.0` to `^7.5.0`. For most people, the changes will be non-breaking, but the [scores have been changed slightly](https://github.com/GoogleChrome/lighthouse/releases/tag/v7.0.0)
+
 ## 1.1.0
 
 ### Minor Changes
