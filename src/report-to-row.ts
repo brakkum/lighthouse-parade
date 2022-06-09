@@ -1,4 +1,4 @@
-import csvParse from 'csv-parse/lib/sync';
+import csvParse from 'csv-parse/lib/sync.js';
 
 export const reportToRowHeaders = (csvFileContents: string) => {
   const singleReportRows: LighthouseCSVReportRow[] | undefined = csvParse(
@@ -45,8 +45,9 @@ export const reportToRow = (csvFileContents: string) => {
   return csvRow;
 };
 
-interface LighthouseCSVReportRow
-  extends Pick<LH.Result, 'requestedUrl' | 'finalUrl'> {
+interface LighthouseCSVReportRow {
+  requestedUrl: string;
+  finalUrl: string;
   category: string;
   name: string;
   title: string;

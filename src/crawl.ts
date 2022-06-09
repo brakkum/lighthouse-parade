@@ -1,8 +1,8 @@
 import Crawler from 'simplecrawler';
-import type { QueueItem } from 'simplecrawler/queue';
+import type { QueueItem } from 'simplecrawler/queue.js';
 import type { IncomingMessage } from 'http';
-import { createEmitter } from './emitter';
-import { isContentTypeHtml } from './utilities';
+import { createEmitter } from './emitter.js';
+import { isContentTypeHtml } from './utilities.js';
 import globrex from 'globrex';
 
 export interface CrawlOptions {
@@ -35,8 +35,15 @@ export const crawl = (siteUrl: string, opts: CrawlOptions) => {
   crawler.respectRobotsTxt = !opts.ignoreRobotsTxt;
   if (opts.maxCrawlDepth !== undefined) crawler.maxDepth = opts.maxCrawlDepth;
 
+  const initialPath = new URL(siteUrl).pathname;
+
   crawler.addFetchCondition(
-    createUrlFilter(opts.includePathGlob, opts.excludePathGlob)
+    createUrlFilter(
+      opts.includePathGlob.length > 0
+        ? [...opts.includePathGlob, initialPath]
+        : [],
+      opts.excludePathGlob
+    )
   );
 
   const emitWarning = (queueItem: QueueItem, response: IncomingMessage) => {

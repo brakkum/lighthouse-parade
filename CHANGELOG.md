@@ -1,5 +1,27 @@
 # lighthouse-parade
 
+## 2.0.2
+
+### Patch Changes
+
+- [#103](https://github.com/cloudfour/lighthouse-parade/pull/103) [`ac23bdb`](https://github.com/cloudfour/lighthouse-parade/commit/ac23bdb8ee02a11b88f0d7c313d3cd6e3eae6c9f) Thanks [@calebeby](https://github.com/calebeby)! - Fix crawling when --include-path-glob is not passed
+
+## 2.0.1
+
+### Patch Changes
+
+- [#99](https://github.com/cloudfour/lighthouse-parade/pull/99) [`fe12bc2`](https://github.com/cloudfour/lighthouse-parade/commit/fe12bc21f59e21663d35cf606df8d90bfdf715ba) Thanks [@calebeby](https://github.com/calebeby)! - Force the initial path to be included in the crawling regardless of include/exclude flags
+
+## 2.0.0
+
+### Major Changes
+
+- [#92](https://github.com/cloudfour/lighthouse-parade/pull/92) [`d0b1d12`](https://github.com/cloudfour/lighthouse-parade/commit/d0b1d12704a4b846daf506953ef78df10ed87c2e) Thanks [@calebeby](https://github.com/calebeby)! - Drop support for node 12 and add support for node 16
+
+* [#77](https://github.com/cloudfour/lighthouse-parade/pull/77) [`4d21edc`](https://github.com/cloudfour/lighthouse-parade/commit/4d21edccdacb91732d041d43d109da05ed1c1323) Thanks [@calebeby](https://github.com/calebeby)! - Update Dependencies
+
+  The most significant change is that Lighthouse has been updated from `^6.4.0` to `^9.5.0`. For most people, the changes will be non-breaking, but throughout the versions the [scores have been changed](https://github.com/GoogleChrome/lighthouse/releases)
+
 ## 1.1.0
 
 ### Minor Changes
@@ -53,7 +75,7 @@
 
 - [`e3a9d2f`](https://github.com/cloudfour/lighthouse-parade/commit/e3a9d2fc9ce89240b2e8b359cb692b2e44396ee7) [#36](https://github.com/cloudfour/lighthouse-parade/pull/36) Thanks [@calebeby](https://github.com/calebeby)! - Support only Node 12 LTS versions or 14
 
-- [`b24d697`](https://github.com/cloudfour/lighthouse-parade/commit/b24d69769f12192783a89128ed2fb6453cdef28d) [#37](https://github.com/cloudfour/lighthouse-parade/pull/37) Thanks [@calebeby](https://github.com/calebeby)! - Updated lighthouse to [6.4.0](https://github.com/GoogleChrome/lighthouse/blob/master/changelog.md#640-2020-09-30).
+- [`b24d697`](https://github.com/cloudfour/lighthouse-parade/commit/b24d69769f12192783a89128ed2fb6453cdef28d) [#37](https://github.com/cloudfour/lighthouse-parade/pull/37) Thanks [@calebeby](https://github.com/calebeby)! - Updated lighthouse to [6.4.0](https://github.com/GoogleChrome/lighthouse/blob/main/changelog.md#640-2020-09-30).
 
 ### Patch Changes
 
